@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: micronautguide
+  server:
+    port: 8081
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/db
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ''
+    schema-generate: CREATE
+    dialect: MYSQL
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+jpa:
+  default:
+    entity-scan:
+      packages: 'br.com.pedrobelmino.micronaut.filme.genero'
